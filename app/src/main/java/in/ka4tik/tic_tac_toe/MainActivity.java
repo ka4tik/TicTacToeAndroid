@@ -64,23 +64,23 @@ public class MainActivity extends Activity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-        switch(item.getGroupId())
-        {
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
             case R.id.newGame:
                 StartNewGame();
-                break;
+                return true;
             case R.id.exitGame:
                 MainActivity.this.finish();
-                break;
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-        return true;
     }
 
     private void StartNewGame()
     {
         mGame.clearBoard();
+        mGameOver=false;
         for(int i=0;i<mBoardButtons.length;i++)
         {
             mBoardButtons[i].setText("");
@@ -129,12 +129,14 @@ public class MainActivity extends Activity {
                         mInfoTextView.setText(R.string.result_tie);
                         mTieCounter++;
                         mTieCount.setText(Integer.toString(mTieCounter));
+                        mGameOver=true;
                     }
                     else if(winner==2)
                     {
                         mInfoTextView.setText(R.string.result_human_wins);
                         mHumanCounter++;
                         mHumanCount.setText(Integer.toString(mHumanCounter));
+                        mGameOver=true;
 
                     }
                     else
@@ -142,6 +144,7 @@ public class MainActivity extends Activity {
                         mInfoTextView.setText(R.string.result_android_wins);
                         mAndroidCounter++;
                         mAndroidCount.setText(Integer.toString(mAndroidCounter));
+                        mGameOver=true;
 
                     }
                 }
