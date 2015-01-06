@@ -23,7 +23,7 @@
                 android:layout_height="fill_parent"
                 android:text="@string/one"
                 android:id="@+id/one"
-                android:textSize="70dp" />
+                android:textSize="50dp" />
 
             <Button
                 android:layout_width="fill_parent"
@@ -141,7 +141,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/human"
-                android:id="@+id/textView2"
+                android:id="@+id/PlayerOneText"
                 android:layout_column="0" />
 
             <TextView
@@ -163,7 +163,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/android"
-                android:id="@+id/textView"
+                android:id="@+id/PlayerTwoText"
                 android:layout_column="0" />
 
             <TextView
