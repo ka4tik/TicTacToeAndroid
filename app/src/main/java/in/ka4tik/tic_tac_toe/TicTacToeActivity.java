@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 
-public class MainActivity extends Activity {
+public class TicTacToeActivity extends Activity {
 
 
     private TicTacToeGame mGame;
@@ -70,7 +70,7 @@ public class MainActivity extends Activity {
                 StartNewGame();
                 return true;
             case R.id.exitGame:
-                MainActivity.this.finish();
+                TicTacToeActivity.this.finish();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
