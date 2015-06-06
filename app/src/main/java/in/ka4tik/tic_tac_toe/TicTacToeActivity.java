@@ -245,10 +245,18 @@ public class TicTacToeActivity extends Activity {
         mGame.setMove(player,location);
         mBoardButtons[location].setEnabled(false);
         mBoardButtons[location].setText(String.valueOf(player));
-        if(player==TicTacToeGame.PLAYER_ONE)
+
+        if(player==TicTacToeGame.PLAYER_ONE) {
             mBoardButtons[location].setTextColor(Color.GREEN);
-        else
+            mBoardButtons[location].setShadowLayer(20,0,0,Color.GREEN);
+            mBoardButtons[location].setBackgroundResource(R.drawable.green_border);
+        }
+        else {
             mBoardButtons[location].setTextColor(Color.RED);
+            mBoardButtons[location].setShadowLayer(20,0,0,Color.RED);
+            mBoardButtons[location].setBackgroundResource(R.drawable.red_border);
+
+        }
     }
 
 

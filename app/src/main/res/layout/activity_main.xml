@@ -3,7 +3,8 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@android:color/black">
 
     <TableLayout
         android:layout_width="match_parent"
@@ -23,14 +24,26 @@
                 android:layout_height="wrap_content"
                 android:text="@string/one"
                 android:id="@+id/one"
-                android:textSize="70sp" />
+                android:textSize="70sp"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="20"
+                android:background="@drawable/yellow_border"
+                android:textColor="#ffff0000"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/two"
                 android:id="@+id/two"
-                android:textSize="70sp" />
+                android:textSize="70sp"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="20"
+                android:background="@drawable/yellow_border"
+                android:textColor="#ffff0000"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -38,7 +51,13 @@
                 android:text="@string/three"
                 android:id="@+id/three"
                 android:layout_column="2"
-                android:textSize="70sp" />
+                android:textSize="70sp"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="20"
+                android:background="@drawable/yellow_border"
+                android:textColor="#ffff0000"/>
         </TableRow>
 
         <TableRow
@@ -51,7 +70,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/four"
                 android:id="@+id/four"
-                android:textSize="70sp" />
+                android:textSize="70sp"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="20"
+                android:background="@drawable/yellow_border"
+                android:textColor="#ffff0000"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -59,14 +84,25 @@
                 android:text="@string/five"
                 android:id="@+id/five"
                 android:textSize="70sp"
-                android:transitionName="sd"/>
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="20"
+                android:background="@drawable/yellow_border"
+                android:textColor="#ffff0000"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/six"
                 android:id="@+id/six"
-                android:textSize="70sp" />
+                android:textSize="70sp"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="20"
+                android:background="@drawable/yellow_border"
+                android:textColor="#ffff0000"/>
         </TableRow>
 
         <TableRow
@@ -79,21 +115,39 @@
                 android:layout_height="wrap_content"
                 android:text="@string/seven"
                 android:id="@+id/seven"
-                android:textSize="70sp" />
+                android:textSize="70sp"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="20"
+                android:background="@drawable/yellow_border"
+                android:textColor="#ffff0000"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/eight"
                 android:id="@+id/eight"
-                android:textSize="70sp" />
+                android:textSize="70sp"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="20"
+                android:background="@drawable/yellow_border"
+                android:textColor="#ffff0000"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/nine"
                 android:id="@+id/nine"
-                android:textSize="70sp" />
+                android:textSize="70sp"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="20"
+                android:background="@drawable/yellow_border"
+                android:textColor="#ffff0000"/>
         </TableRow>
 
     </TableLayout>
@@ -106,7 +160,8 @@
         android:id="@+id/info"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/table"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"/>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -128,7 +183,8 @@
                 android:text="@string/ties"
                 android:id="@+id/textView4"
                 android:layout_column="0"
-                android:gravity="center_horizontal"/>
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -137,7 +193,8 @@
                 android:text="1"
                 android:id="@+id/tiesCount"
                 android:layout_column="1"
-                android:gravity="center_horizontal"/>
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
         </LinearLayout>
 
         <LinearLayout
@@ -153,7 +210,8 @@
                 android:text="@string/human"
                 android:id="@+id/PlayerOneText"
                 android:layout_column="0"
-                android:gravity="center_horizontal"/>
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -162,7 +220,8 @@
                 android:text="1"
                 android:id="@+id/humanCount"
                 android:layout_column="1"
-                android:gravity="center_horizontal"/>
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
         </LinearLayout>
 
         <LinearLayout
@@ -178,7 +237,8 @@
                 android:text="@string/android"
                 android:id="@+id/PlayerTwoText"
                 android:layout_column="0"
-                android:gravity="center_horizontal"/>
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -187,7 +247,8 @@
                 android:text="1"
                 android:id="@+id/androidCount"
                 android:layout_column="1"
-                android:gravity="center_horizontal"/>
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"/>
         </LinearLayout>
     </LinearLayout>
 
