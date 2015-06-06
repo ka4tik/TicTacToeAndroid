@@ -17,9 +17,9 @@
     <string name="eight">8</string>
     <string name="nine">9</string>
     <string name="info">Info</string>
-    <string name="human">Human: </string>
-    <string name="ties">Ties: </string>
-    <string name="android">Android: </string>
+    <string name="human">Human</string>
+    <string name="ties">Ties</string>
+    <string name="android">Android</string>
     <string name="contact_heading">Contact Info</string>  
     <string name="contact_info">  
       <b>Name:</b> Kartik Singal\n

@@ -6,113 +6,120 @@
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
     <TableLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/table">
 
         <TableRow
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal">
 
             <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/one"
                 android:id="@+id/one"
-                android:textSize="50dp" />
+                android:textSize="70sp" />
 
             <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/two"
                 android:id="@+id/two"
-                android:textSize="70dp" />
+                android:textSize="70sp" />
 
             <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/three"
                 android:id="@+id/three"
                 android:layout_column="2"
-                android:textSize="70dp" />
+                android:textSize="70sp" />
         </TableRow>
 
         <TableRow
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal">
 
             <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/four"
                 android:id="@+id/four"
-                android:textSize="70dp" />
+                android:textSize="70sp" />
 
             <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/five"
                 android:id="@+id/five"
-                android:textSize="70dp" />
+                android:textSize="70sp"
+                android:transitionName="sd"/>
 
             <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/six"
                 android:id="@+id/six"
-                android:textSize="70dp" />
+                android:textSize="70sp" />
         </TableRow>
 
         <TableRow
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal">
 
             <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/seven"
                 android:id="@+id/seven"
-                android:textSize="70dp" />
+                android:textSize="70sp" />
 
             <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/eight"
                 android:id="@+id/eight"
-                android:textSize="70dp" />
+                android:textSize="70sp" />
 
             <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/nine"
                 android:id="@+id/nine"
-                android:textSize="70dp" />
+                android:textSize="70sp" />
         </TableRow>
 
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal">
+    </TableLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/info"
-                android:id="@+id/info"
-                android:layout_column="0" />
-        </TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/info"
+        android:id="@+id/info"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/table"
+        android:layout_marginTop="20dp"/>
 
-        <TableRow
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/info">
+
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:gravity="center_horizontal">
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -120,7 +127,8 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/ties"
                 android:id="@+id/textView4"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:gravity="center_horizontal"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -128,13 +136,15 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="1"
                 android:id="@+id/tiesCount"
-                android:layout_column="1" />
-        </TableRow>
+                android:layout_column="1"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
 
-        <TableRow
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:gravity="center_horizontal">
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -142,7 +152,8 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/human"
                 android:id="@+id/PlayerOneText"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:gravity="center_horizontal"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -150,13 +161,15 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="1"
                 android:id="@+id/humanCount"
-                android:layout_column="1" />
-        </TableRow>
+                android:layout_column="1"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
 
-        <TableRow
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:gravity="center_horizontal">
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -164,7 +177,8 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/android"
                 android:id="@+id/PlayerTwoText"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:gravity="center_horizontal"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -172,9 +186,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="1"
                 android:id="@+id/androidCount"
-                android:layout_column="1" />
-        </TableRow>
-
-    </TableLayout>
+                android:layout_column="1"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>
